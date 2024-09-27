@@ -114,7 +114,7 @@ async def tour(ctx, duration_or_action: str, *, message: str = None):
     except ValueError:
         return await ctx.send("Ungültiges Zeitformat. Nutze `h`, `m` oder `s`.", delete_after=10)
 
-    image_url = "https://raw.githubusercontent.com/Reso1992/DmoDiscordBot/main/bandicam%202024-09-25%2022-51-53-515.jpg"
+    image_url = "https://github.com/Reso1992/DmoTimer/raw/main/bandicam%202024-09-25%2022-51-53-515.jpg"
     timer = TourTimer(ctx, duration, image_url, message)
     manage_timers(user_id, timer, "add")
     await timer.start()
